@@ -1,18 +1,17 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <BackGround :src="require(`@/assets/GameBoard/Base.png`)" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import BackGround from '@/konva/BackGround.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    BackGround
   }
 }
 </script>
